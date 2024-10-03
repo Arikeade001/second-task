@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    gap: 800px;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 2% 2%; */
+    border-bottom:2px solid rgb(225, 225,225);
+    width: Hug (1,440px)px;
+    height: Hug (80px)px;
+    padding: 10px 96px 10px 96px;
+    opacity: 0px;
+    background: #FFFFFF;
+
+}
+nav img{
+    width: 900px;
+    /* height: 500px; */
+    font-size: 120px;
+}
+.nav_links ul{
+    display: flex;
+    gap: 150px;
+    text-align: right;
+   
+}
+.nav_links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px 12px;
+    position: relative;
+}
+.nav_links ul li a{
+    text-decoration: none;
+    color: blue;
+    font-size: 64px;
+}
+.nav_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: blue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_links ul li:hover::after{
+    width:100%;
+}
+.textbox{
+    position: absolute;
+    color: white;
+    width: 90%;
+    text-align:center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.textbox h1{
+    font-size: 220px;
+    color: white;
+    font-weight:900;
+}
+.textbox p{
+    font-size: 64px;
+    margin: 10px 0 40px;
+}
+  .container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: rgb(225,255,255);
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+      /* Optional: For visual clarity 
+    width: 1440px; */
+    /* height: 5186px;
+    top: -2593px;
+    left: 329px;
+    gap: 0px;
+    opacity: 0px; */
+
+}  
+.container img{
+    width: 6000px;
+    height: 2050px;
+    gap: 0px;
+    opacity: 0px;
+}
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust centering based on height and width */
+    text-align: center;
+    color: white; /* Make text visible over the image */
+
+}
+
+
+.text-overlay h3{
+    margin-bottom: 30px;
+   margin : 0;
+    padding: 10px;
+    font-size: 100px;
+}
+
+.text-overlay p {
+   margin : 0;
+    padding: 10px;
+    font-size: 100px;
+}
+
+.btn {
+    margin-top: 40px;
+    border: 2px solid #201B68;
+    padding: 5px 10px;
+    background-color:#201B68;
+    color: white;
+    width: 500px;
+    height: 200px;
+    border-radius: 90px;
+    font-size: 40px;
+}
+.section {
+    display: flex;
+    gap: 507px;
+    justify-content: center;
+    align-items: center; /* Aligns them vertically in the center */
+    margin-top: 100px;
+}
+.hidden img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+    margin-bottom: 34px;
+    margin-left: 135px;
+    width: 5144px;
+    height: 2064px;
+}
+
+.section h4 {
+    flex: 1; /* Allows the h4 to take up space */
+    font-size: 100px;
+    text-align: center;
+}
+
+.section p {
+    flex: 2; 
+    font-size: 50px;
+}
+
+.hidden2 {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 90px; /* Adds space between the images */
+    align-items: center;
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-top: 54px;
+}
+.hidden2 img {
+    width: 1000%;
+height: 800px;
+top: 768px;
+left: 96px;
+gap: 0px;
+border-radius: 8px 0px 0px 0px;
+opacity: 0px;
+}
+.goes{
+    text-align: center;
+    margin-top: 700px;
+}
+.goes h2{
+    font-size: 150px;
+
+}
+.goes p{
+    font-size:50px;
+    margin-top: 30px;
+}
+.goes img{
+    width: 2000px;
+    height:2000px;
+    margin-top: 200px;
+    border-radius: 8px 0px 0px 0px;
+    margin-right: 50px;    
+    justify-content: space-between;
+}
+.goes img:last-child {
+    margin-right: 0; /* Ensures the last image doesn't have extra space */
+}
+.invite{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 100px;
+}
+.invite img{
+    width: 4000;
+}
+.task {
+    text-align: left; 
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.task h6 {
+    margin:0; 
+    padding: 40px; 
+    font-size: 50px;
+    text-align: left;
+    margin-right: 150px;
+    color: purple;
+}
+.task p{
+    margin: 0; 
+    padding: 40px; 
+    font-size: 50px;
+    text-align: left;
+    color:rgb(225, 225,225); 
+    
+
+}
+.task h3{
+    margin: 0;
+    padding: 0;
+    font-size:150px;
+}
+.plan{
+    text-align: left; 
+    margin-left: 300px;
+    margin-top: 50px;
+    display: flex;
+    gap: 100px;
+} 
+.parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 200px;
+}
+.parent img{
+    width: 1095px;
+    height: 1090px;
+    height: px;
+    margin-right: 100px;
+}
+.plan img{
+    width: 8px;
+    height: 500px;
+}
+.box h4{
+    font-size: 60px;
+    margin-bottom: 60px;
+
+}
+ .box p, h5{
+    font-size: 50px;
+    color:rgb(225, 225,225); 
+}
+.tab{
+    text-align: left; 
+    margin-left: 400px;
+}
+.tab h3{
+    font-size:60px;
+}
+.tab p, h6{
+    font-size:50px;
+    color:rgb(225, 225,225); 
+}
+.file{
+    text-align: left; 
+    margin-left: 400px;
+    margin-top: 40px;
+}
+.file h4{
+    font-size: 60px;
+}
+.file p, h5{
+    font-size:50px;
+    color:rgb(225, 225,225); 
+}
+.new{
+    width:4000px;
+    height:2000px;
+    background-color:rgb(32,27,104);
+    margin-left:500px;
+    margin-right:500px;
+    margin-top: 500px;
+}
+.log{
+    text-align: center;
+    color: white;
+}
+.log img{
+    margin-top: 500px;
+    width: 500px;
+}
+.log h2{
+    font-size:100px;
+    margin-top: 100px;
+}
+.log p{
+    font-size: 50px;
+}
+.cast{
+   border-bottom: 2px solid white;
+   margin-left: 150px;
+   margin-right: 150px;
+   width: 1248;
+   margin-top: 100px;
+}
+.logo{
+    color: white;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 878px; */
+}
+.wrapper{
+    font-size: 52px;
+    
+}
+.brand{
+    gap: 50px;
+    display: flex;
+    font-size:74px;
+}
